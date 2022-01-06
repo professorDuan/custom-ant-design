@@ -4,6 +4,7 @@
   "private": true,
   "author": "professorDuan",
   "dependencies": {
+    "@ea/eslint-config-ea": "^2.1.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -24,8 +25,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --fix \"{src,mock}/**/*.{ts,tsx}\"",
-    "precommit": "yarn lint",
-    "commit": "git-cz"
+    "prettier": "prettier --write \"{src,mock}/**/*.{ts,tsx,css,less}\"",
+    "precommit": "yarn prettier && yarn lint",
+    "commit": "git-cz",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
