@@ -1,6 +1,3 @@
-// 覆盖 eslint-config-byted 在 eslint 里报错的 rule
-const prettierConfig = { ...require("@ea/eslint-config-ea/prettierrc") };
-
 module.exports = {
   globals: {
     Atomics: "readonly",
@@ -27,7 +24,7 @@ module.exports = {
     "react/no-array-index-key": "off",
     "guard-for-in":"off",
     "@typescript-eslint/explicit-module-boundary-types":"off",
-    "prettier/prettier": ["error", prettierConfig],
+    "prettier/prettier": "off",
     'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }]
   }
 };

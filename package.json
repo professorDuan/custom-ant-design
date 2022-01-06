@@ -4,7 +4,7 @@
   "private": true,
   "author": "professorDuan",
   "dependencies": {
-    "@ea/eslint-config-ea": "^2.1.0",
+    "@ea/eslint-config-ea": "^2.0.7",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
