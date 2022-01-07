@@ -1,0 +1,12 @@
+/*
+  样式入口文件，面试一些可能的考点：
+  1、import和@import的区别？
+  import是ES6语法，引入组件或者样式，@import是stylus语法，在样式文件中引入别的样式文件
+  2、@import和link的区别？
+  link在页面加载同时会去加载，而@import在页面加载完成后才会去加载，可能会有短暂样式缺失；@import只能引入样式文件，link可以引入其他例如RSS事务
+  3、sass的@import和css的@import区别？
+  在sass中_开头的文件只能以模块化形式导入(引入时不用带_)，不能直接在组件中引入(无法解析成CSS文件)！css3中的@import可能会造成延迟加载，
+  有的地方没有样式，sass @import解决了这个问题，它能将多个scss合并为一个
+*/
+@import 'constant';
+@import 'normalize';

@@ -1,7 +1,5 @@
-import './globals/constant.scss';
-
 function App() {
-    return <div>Test</div>;
+    return <h1>Test</h1>;
 }
 
 export default App;
