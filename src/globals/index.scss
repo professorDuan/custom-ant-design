@@ -7,6 +7,10 @@
   3、sass的@import和css的@import区别？
   在sass中_开头的文件只能以模块化形式导入(引入时不用带_)，不能直接在组件中引入(无法解析成CSS文件)！css3中的@import可能会造成延迟加载，
   有的地方没有样式，sass @import解决了这个问题，它能将多个scss合并为一个
+  4、create-react-app中配置sass
+  直接yarn add -dev node-sass，不用其他配置，新建的文件后缀名为.scss
 */
 @import 'constant';
 @import 'normalize';
+@import 'mixin';
+@import '../Components/Button/button';

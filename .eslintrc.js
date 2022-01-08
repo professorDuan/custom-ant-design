@@ -3,11 +3,15 @@ module.exports = {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
   },
-  extends: "byted/strict",
+  //extends: "byted/strict",
   settings: {
       react: {
           version: "detect"
       }
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
   },
   rules: {
     indent: "off",
